@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" />
+  <title>Mehedi Hasan Shuvon | Portfolio Website</title>
+  <!-- Linking CSS File -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fontawesome link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <style>
+    .loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+  <!-- Header & Navbar -->
+  <header id="myNav" class="fixed-top">
+    <nav class="container-xxl navbar navbar-expand-lg py-3  navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-3" href="#">Mehedi Hasan Shuvon</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#skills">SKILLS</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#portfolio">PROJECTS</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#cv">CURRICULUM VITAE</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero or Showcase Section -->
+  <section id="heroSection" class="hero d-flex flex-column align-items-center justify-content-center">
+    <div class="text-center">
+      <h1 class="h1 text-white fw-medium fst-italic">Hello There 👏 I am,</h1>
+      <!-- <h2 id="movingText" class="display-3 text-white fw-bold">Mehedi Hasan Shuvon</h2> -->
+      <h1>
+        <a href="" class="typewrite text-white fw-medium  fw-bold" data-period="2000"
+          data-type='[ "MEHEDI HASAN SHUVON", "SOFTWARE ENGINEER", "FULL-STACK DEVELOPER", "TECH ENTHUSIAST" ]'>
+          <span class="wrap"></span>
+        </a>
+      </h1>
+
+      <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-5 p-3 text-white"
+        style="background-color: #427D9D ;">Explore My Journey</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="container py-5" id="skills">
+    <div class="row mt-4 py-3">
+      <div class="col-12 d-flex flex-column text-center justify-content-center">
+        <h2>SKILLS</h2>
+        <h5 class="text-secondary fw-normal py-2 fst-italic">Continuously improving my skills and knowledge in these
+          fields.</h5>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-between mx-0">
+
+      <!-- skill 1 -->
+      <div class="card mt-5 d-flex flex-column align-items-center text-center p-4 skill-card" style="width: 25rem">
+        <i class="d-flex align-items-center justify-content-center rounded-circle bg-primary skill-icon1">
+        </i>
+        <h3 class="mt-4 h4">Front-end Development</h3>
+        <p class="text-center">Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building
+          user-friendly interfaces, and using modern frameworks like ReactJS and AngularJS.</p>
+      </div>
+
+      <!-- skill 2 -->
+      <div class="card mt-5 d-flex flex-column align-items-center text-center  p-4 skill-card" style="width: 25rem">
+        <i class="d-flex align-items-center justify-content-center rounded-circle bg-primary skill-icon2">
+        </i>
+        <h3 class="mt-4 h4">Back-end Development</h3>
+        <p class="text-center">Skilled in server-side programming using technologies like Node.js, Express,PHP and
+          Laravel ,.Net etc. Experience working with databases such as MySQL,Postgresql,Oracle etc.</p>
+      </div>
+
+      <!-- skill 3 -->
+      <div class="card mt-5 d-flex flex-column align-items-center text-center  p-4 skill-card" style="width: 25rem">
+        <i class="d-flex align-items-center justify-content-center rounded-circle bg-primary skill-icon3">
+        </i>
+        <h3 class="mt-4 h4">Programmer</h3>
+        <p class="text-center">Skilled in programming languages like Java, Python,JavaScript and PHP etc. Have good
+          knowledge of Object Oriented Programming, Data Structures, Algorithms and SDLC methodologies</p>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="portfolio" class="col-12 d-flex py-5 flex-column text-center">
+    <h2>PROJECTS</h2>
+    <h5 class="text-secondary fw-normal py-2 fst-italic">A collection of projects I've worked on.</h5>
+
+  </div>
+  <section id="project" class="container mb-5">
+    <div class="projects">
+
+      <!-- New Project: Shop Keeper Management System -->
+      <div class="project-card">
+        <div class="project-info">
+          <label class="project-title">Shop Keeper Management System</label>
+          <div class="project-links">
+            <a class="project-link" href="https://www.youtube.com/watch?v=O61HZBsKXkM" target="_blank">
+              <div class="link-button">
+                <i class="fa-solid fa-earth-americas"></i>
+                Demo Video
+              </div>
+            </a>
+            <a class="project-link"
+              href="https://github.com/mehedi-hasan-shuvon/Assignment11-Storekeeper-Project-Laravel-React"
+              target="_blank">
+              <div class="link-button">
+                <i class="fa-brands fa-github"></i>
+                Code
+              </div>
+            </a>
+          </div>
+          <p>
+            This is a web-based application to manage a shop and its sales. The seller can create categories and
+            products, manage sales, generate invoices, and view sales statistics. It provides an intuitive
+            dashboard for monitoring daily and monthly sales through dynamic charts.
+          </p>
+          <div class="project-tags">
+            <label class="tags">Laravel</label>
+            <label class="tags">ReactJS</label>
+            <label class="tags">InertiaJS</label>
+            <label class="tags">Tailwind CSS</label>
+            <label class="tags">ApexCharts</label>
+            <label class="tags">PrintToPDF</label>
+            <label class="tags">MySQL</label>
+          </div>
+        </div>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/O61HZBsKXkM" title="Shop Keeper Management System Demo"
+            allowfullscreen class="rounded-3 border border-2 border-dark-subtle">
+          </iframe>
+        </div>
+      </div>
+
+
+
+      <div class="project-card">
+        <div class="project-info">
+          <label class="project-title">Doctors Portal Management Website</label>
+          <div class="project-links">
+            <a class="project-link" href="https://doctors-portal-10629.web.app/" target="_blank">
+              <div class="link-button">
+                <i class="fa-solid fa-earth-americas"></i>
+                Demo
+              </div>
+            </a>
+            <a class="project-link" href="https://github.com/mehedi-hasan-shuvon/doctors-portal-client-side"
+              target="_blank">
+              <div class="link-button">
+                <i class="fa-brands fa-github"></i>
+                Client-side
+              </div>
+            </a>
+            <a class="project-link" href="https://github.com/mehedi-hasan-shuvon/doctors-portal-server" target="_blank">
+              <div class="link-button">
+                <i class="fa-brands fa-github"></i>
+                Server-side
+              </div>
+            </a>
+          </div>
+          <p>
+            A full stack role-based web application for doctors and patients. Patients can book appointments,
+            pay via Stripe, and manage bookings; admins can assign doctors and manage users.
+          </p>
+          <div class="project-tags">
+            <label class="tags">ReactJS</label>
+            <label class="tags">NodeJS</label>
+            <label class="tags">ExpressJS</label>
+            <label class="tags">MongoDB</label>
+            <label class="tags">Tailwind CSS</label>
+            <label class="tags">DaisyUI</label>
+            <label class="tags">Stripe</label>
+            <label class="tags">Firebase</label>
+            <label class="tags">JWT</label>
+          </div>
+        </div>
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GaPFjxhJ_UQ?si=hLlfOvDuLpsHGyzY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+      <div class="project-card">
+        <div class="project-info">
+          <label class="project-title">Cart System Management</label>
+          <div class="project-links">
+            <a class="project-link" href="https://mtechbd-cart-system-assignment.netlify.app/" target="_blank">
+              <div class="link-button">
+                <i class="fa-solid fa-earth-americas"></i>
+                Demo
+              </div>
+            </a>
+            <a class="project-link" href="https://github.com/mehedi-hasan-shuvon/mtechbd-assignment" target="_blank">
+              <div class="link-button">
+                <i class="fa-brands fa-github"></i>
+                Code
+              </div>
+            </a>
+          </div>
+          <p>
+            This is an Add-to-Cart and order placing project created with ReactJS without any front-end
+            framework.
+            Users can browse products, add them to the cart, update quantities, and place orders via a dummy
+            checkout form.
+            The cart badge updates in real-time using Context API, and the UI is fully responsive for desktop,
+            tablet,
+            and mobile views.
+          </p>
+          <div class="project-tags">
+            <label class="tags">HTML</label>
+            <label class="tags">CSS</label>
+            <label class="tags">ReactJS</label>
+            <label class="tags">React-Toast</label>
+            <label class="tags">React-Font-Awesome</label>
+            <label class="tags">React-Spinner</label>
+          </div>
+        </div>
+        <img src="images/p-cart.png" alt="Cart System Management Project" class="project-photo">
+      </div>
+
+
+
+      <div class="project-card">
+        <div class="project-info">
+          <label class="project-title">Typing Speed Tracker Project</label>
+          <div class="project-links">
+            <a class="project-link" href="https://typing-speed-tracker-js.netlify.app/" target="_blank">
+              <div class="link-button">
+                <i class="fa-solid fa-earth-americas"></i>
+                Demo
+              </div>
+            </a>
+            <a class="project-link" href="https://github.com/mehedi-hasan-shuvon/typing-test-project-javascript"
+              target="_blank">
+              <div class="link-button">
+                <i class="fa-brands fa-github"></i>
+                Github
+              </div>
+            </a>
+          </div>
+          <p>
+            A JavaScript project that tracks typing speed in CPM and WPM, featuring both dark and light mode
+            themes.
+          </p>
+          <div class="project-tags">
+            <label class="tags">HTML</label>
+            <label class="tags">CSS</label>
+            <label class="tags">Bootstrap</label>
+            <label class="tags">JavaScript</label>
+          </div>
+        </div>
+        <img src="images/p4.png" alt="Typing Speed Tracker" class="project-photo">
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- About Section -->
+<section class="container py-5 about-section" id="about">
+  <div class="blurry-background"></div>
+  <div class="row mt-4 py-3">
+    <div class="col-12 d-flex flex-column text-center">
+      <h2 class="white-text">ABOUT</h2>
+      <h5 class="fw-normal py-2 color-text">Learn more about me, my background, and what motivates me.</h5>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+    <div class="col-9 col-md-5 text-md-end">
+      <h5 class="white-text">2018-2022</h5>
+      <h5 class="color-text">Bachelor of Science in CSE, BRAC University</h5>
+      <p class="white-text">
+        I graduated from BRAC University in CSE (Computer Science and Engineering). My Thesis topic was
+        "Skin disease detection and classification using deep learning". I was a regular student and for my
+        performance, I was awarded the Vice-Chancellor (VC) certificate in the residential semester from BRAC University.
+      </p>
+    </div>
+    <div class="col-3 col-md-2 img text-center">
+      <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/uniLogo.png" alt="img">
+    </div>
+  </div>
+
+  <!-- Student Tutor -->
+  <div class="row justify-content-md-end mt-5 pt-5">
+    <div class="col-3 col-md-2 img text-center">
+      <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/studentTutor.jpg" alt="img">
+    </div>
+    <div class="col-9 col-md-5">
+      <h5 class="white-text">2021-2022</h5>
+      <h5 class="color-text">Student Tutor, BRAC University</h5>
+      <p class="white-text">
+        I was a student tutor at BRAC University in CSE220 & CSE221 (Data Structures and Algorithms) courses in Python for almost one year.
+        My responsibilities included teaching theory and lab classes in Python and Java, checking assignments, and preparing lecture materials.
+      </p>
+    </div>
+  </div>
+
+  <!-- Manush Technologies -->
+  <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+    <div class="col-9 col-md-5 text-md-end">
+      <h5 class="white-text">2022-2023</h5>
+      <h5 class="color-text">Junior Software Engineer, Manush Technologies Ltd.</h5>
+      <p class="white-text">
+        I worked as a Junior Software Engineer at Manush Technologies Ltd for one year. I contributed to several full-stack
+        projects including e-commerce platforms and admin panels. For frontend development, I used ReactJS and NextJS, and for
+        backend development, I worked with NodeJS, ExpressJS, Objection ORM, and PostgreSQL.
+      </p>
+    </div>
+    <div class="col-3 col-md-2 img text-center">
+      <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/officeBlur.jpg" alt="img">
+    </div>
+  </div>
+
+  <!-- Nextgen Innovation LTD -->
+  <div class="row justify-content-md-end mt-5 pt-5">
+    <div class="col-3 col-md-2 img text-center">
+      <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/nextGen.png" alt="img">
+    </div>
+    <div class="col-9 col-md-5">
+
+      <h5 class="white-text">2023-2025</h5>
+      <h5 class="color-text">Software Engineer, Nextgen Innovation Ltd.</h5>
+      <p class="white-text">
+        I worked as a Software Engineer at Nextgen Innovation Ltd where I contributed to data analysis projects.
+        My main responsibilities included backend and frontend development using the LAMP stack with PHP and AngularJS.
+      </p>
+    </div>
+  </div>
+
+  <!-- ICB Asset Management PLC -->
+  <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+	
+    <div class="col-9 col-md-5 text-md-end">
+      <h5 class="white-text">2025-Present</h5>
+      <h5 class="color-text">Assistant Programmer, ICB Asset Management PLC.</h5>
+      <p class="white-text">
+        I am currently working as an Assistant Programmer at ICB Asset Management PLC. I contribute to the design, development,
+        and maintenance of enterprise-level applications. My responsibilities include database management, application development,
+        and integrating automation solutions to improve business efficiency.
+      </p>
+    </div>
+    <div class="col-3 col-md-2 img text-center">
+      <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/icb.png" alt="ICB Logo">
+    </div>
+  </div>
+
+  <div class="row justify-content-md-center mt-5 pt-5">
+    <div class="col-3 col-md-2 d-flex justify-content-center hire-text">
+      <h2 class="h4 d-flex justify-content-center align-items-center white-text rounded-circle border border-5 border-dark-subtle last-circle"></h2>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Curriculum Vitae Section -->
+<section class="container py-5 about-section2" id="cv">
+    <div class="blurry-background2"></div>
+    <div class="row mt-4 py-3">
+        <div class="col-12 d-flex flex-column text-center">
+            <h2>CURRICULUM VITAE</h2>
+            <!-- <h5 class="text-secondary fw-normal py-2 fst-italic">A small sampling of some of the projects I've worked on as a student of the ICS program.</h5> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 mt-5 order-lg-0 order-1 text-center">
+            <img class="img-fluid rounded-circle border border-5 border-dark-subtle"
+                src='images/meFormalRounded.jpg' alt="profile-img">
+            <h2 class="mt-3">Mehedi Hasan Shuvon</h2>
+            <ul class="list-unstyled contact-info">
+                <li><i class="fas fa-envelope me-2"></i>mehedi.hasan.shuvon@gmail.com</li>
+                <li><i class="fas fa-phone me-2"></i> (+880) 1731876347</li>
+                <li><i class="fas fa-map-marker-alt me-2"></i>Dhaka,Bangladesh</li>
+            </ul>
+            <ul class="social-icons my-5 d-flex justify-content-center">
+                <a href="https://github.com/mehedi-hasan-shuvon" target="_blank"
+                    class="github-social mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle">
+                </a>
+                <a href="https://www.facebook.com/mehedi.hasan.315428" target="_blank"
+                    class="facebook-social mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"></a>
+                <a href="https://www.instagram.com/mehedi_hasan_shuvon" target="_blank"
+                    class="instagram-social mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"></a>
+                <a href="https://www.linkedin.com/in/mehedi-hasan-8b65081b0/" target="_blank"
+                    class="linkedin-social mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"></a>
+
+            </ul>
+
+            <h5>Technical Skills</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <span class="fw-bold">Expertise:</span>
+                    HTML5, CSS3, JavaScript, React.js, AngularJS, Node.js, Express.js, Objection ORM,
+                    PHP, Laravel, .NET, MySQL, PostgreSQL, Oracle, Firebase, Bootstrap, Tailwind CSS, Material UI.
+                </li>
+                <li><span class="fw-bold">Comfortable with: </span>: TypeScript, Redux, Redis</li>
+                <li><span class="fw-bold">Tools: </span>Git, Docker, VS Code, Chrome Dev Tools, Netlify </li>
+                <li><span class="fw-bold">Others: </span> All MS Office software(MS word, MS Excel etc.) and Animation
+                    making with Adobe </li>
+                <!-- Add or remove skills as needed -->
+            </ul>
+            <h5>Personal Interests</h5>
+            <ul class="list-unstyled">
+                <li>Coding</li>
+                <li>Playing Games</li>
+                <li>Playing Guitar</li>
+                <!-- Add or remove interests as needed -->
+            </ul>
+        </div>
+        <div class="col-lg-7 order-lg-1 order-0 mt-5 text-start">
+            <h3>Profile</h3>
+            <hr>
+            <p>Growth-oriented, professional-minded, enthusiastic and graduated B.Sc. in Computer Science and
+                Engineering successfully. Looking toward launching a growth-focused career that will concentrate on
+                programming and development by critical thinking ability, solid ethics, and integrity.</p>
+            <!-- <h3>Highlights of Qualifications</h3>
+  <hr>
+  <ul>
+  <li>Qualification 1</li>
+  <li>Qualification 2</li>
+  <li>Qualification 3</li>
+  </ul> -->
+            <h3>Education</h3>
+            <hr>
+            <dl>
+                <dt>2018 - 2022</dt>
+                <dd>BRAC University</dd>
+                <dd>B.Sc in Computer Science and Engineering</dd>
+            </dl>
+            <dl>
+                <dt>2017</dt>
+                <dd>Notre Dame College, Dhaka</dd>
+                <dd>Higher Secondary Certificate</dd>
+            </dl>
+            <dl>
+                <dt>2015</dt>
+                <dd>Motijheel Ideal School and College, Dhaka</dd>
+                <dd>Secondary School Certificate</dd>
+            </dl>
+            <h3>Additional Courses & Training</h3>
+            <hr>
+            <dl>
+                <dt>24 August 2025 – 28 August 2025</dt>
+                <dd>Database Query and Data Processing using Oracle</dd>
+                <dd>Bangladesh Institute of Bank Management (BIBM)</dd>
+            </dl>
+            <dl>
+                <dt>July 2023 – December 2023</dt>
+                <dd>Web Development with PHP & Laravel</dd>
+                <dd>OSTAD</dd>
+            </dl>
+            <dl>
+                <dt>January 2022 – May 2022</dt>
+                <dd>Complete Web Development Course With
+                    Jhankar Mahbub</dd>
+                <dd>Programming Hero</dd>
+            </dl>
+
+            <h3>Work Experience</h3>
+            <hr>
+            <dl>
+                <dt>2025-Now</dt>
+                <dd>Assistant Programmer</dd>
+                <dd>ICB Asset Management PLC.</dd>
+            </dl>
+            <dl>
+                <dt>2023-2025</dt>
+                <dd>Software Engineer</dd>
+                <dd>Nextgen Innovation LTD.</dd>
+            </dl>
+            <dl>
+                <dt>2022-2023</dt>
+                <dd>Junior Software Engineer</dd>
+                <dd>Manush Technologies Ltd</dd>
+            </dl>
+            <dl>
+                <dt>2021-2022</dt>
+                <dd>Student Tutor</dd>
+                <dd>BRAC University</dd>
+            </dl>
+            <h3>Special Achievements</h3>
+            <hr>
+            <dl>
+                <dt>Vice-chancellor Certificate</dt>
+                <dd>Brac University</dd>
+            </dl>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <!-- <section class="py-5" id="contact">
+      <div class="container-xxl py-5">
+        <div class="col-12 d-flex flex-column text-center justify-content-center">
+          <h2 class="text-white">CONTACT ME</h2>
+          <h5 class="text-white fw-normal py-2 fst-italic">Interested if I'd be the right fit for your team? Fill in this form and I will respond within 24-48 hours.</h5>
+        </div>
+        <div class="row pt-4 mt-5">
+          <div class="col-12">
+            <form action="#" method="POST">
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Enter Name*" required>
+                    <label for="floatingInput">Enter Name*</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="Enter Email*" required>
+                    <label for="floatingEmail">Enter Email*</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingPassword" placeholder="Enter Phone*" required>
+                    <label for="floatingPassword">Enter Phone*</label>
+                  </div>
+                </div>
+                <div class="form-floating col-lg-6">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingMessage" style="height: 205px" required></textarea>
+                  <label for="floatingMessage" class="px-4">Enter Message*</label>
+                </div>
+                <div class="col-12 mt-5 d-flex justify-content-center">
+                  <button class="btn btn-lg btn-outline-light">SEND MESSAGE</button>
+                </div>
+              </div>
+  
+            </form>
+          </div>
+        </div>
+       </div>
+     </section> -->
+  <div id="contact" class="col-12 d-flex py-5 flex-column text-center">
+    <h2>CONTACT</h2>
+
+  </div>
+
+  <div class=" container contact-container ">
+    <div class="contact-left"><img class="contact_photo" src="images/contact.png" alt="">
+      <p>Want to get in Touch, Contact me on any of the platform</p>
+    </div>
+    <div class="download1">
+      <div>
+        <p class="say">Say Something...</p>
+        <form>
+          <div><label>Name: </label><br><input type="text" name="from_name" required=""></div>
+          <div><label>Email: </label><br><input type="email" name="user_email" required=""></div>
+          <div><label>subject: </label><input type="text" name="subject"></div>
+          <div><label>Message: </label><textarea name="message" rows="5"></textarea></div>
+          <div><input class="sending" type="submit" value="Send Email"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="animated-footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#skills">Skills</a></li>
+      <li class="list-inline-item"><a href="#portfolio">Projects</a></li>
+      <li class="list-inline-item"><a href="#about">About</a></li>
+      <li class="list-inline-item"><a href="#cv">CV</a></li>
+      <li class="list-inline-item"><a href="#contact">Contact</a></li>
+    </ul>
+    <ul class="social-icons my-5 d-flex justify-content-center">
+      <a href="https://github.com/mehedi-hasan-shuvon" target="_blank"
+        class="github-social-footer mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle">
+      </a>
+      <a href="https://www.facebook.com/mehedi.hasan.315428" target="_blank"
+        class="facebook-social mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"></a>
+      <a href="https://www.instagram.com/mehedi_hasan_shuvon" target="_blank"
+        class="instagram-social mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"></a>
+      <a href="https://www.linkedin.com/in/mehedi-hasan-8b65081b0/" target="_blank"
+        class="linkedin-social mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"></a>
+
+    </ul>
+
+    <p class="copyright">All rights reversed. Mehedi Hasan Shuvon's portfolio © 2023</p>
+  </div>
+
+
+  <!-- Bootstrap script link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+
+  <script src="js/textAnimation.js">
+  </script>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('myNav');
+      const heroSection = document.getElementById('heroSection');
+      const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+
+      if (window.pageYOffset > heroBottom - navbar.offsetHeight) {
+        navbar.classList.add('scrolled'); // Add a CSS class to change navbar styling
+      } else {
+        navbar.classList.remove('scrolled'); // Remove the class if not scrolled past the hero section
+      }
+    });
+  </script>
+
+  <script>
+    window.addEventListener('load', function () {
+      const loader = document.querySelector('.loader-wrapper');
+      loader.style.display = 'none';
+    });
+  </script>
+
+
+
+</body>
+
+</html>
